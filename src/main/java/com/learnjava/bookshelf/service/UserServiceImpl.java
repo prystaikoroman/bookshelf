@@ -23,7 +23,7 @@ public class UserServiceImpl implements UserDetailsService, UserService {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-    private UserMapper userMapper = new UserMapperImpl();
+    private UserMapperImpl userMapper = new UserMapperImpl();
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
